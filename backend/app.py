@@ -6,7 +6,7 @@ messages = []
 
 
 @app.post('/message')
-def add_message():  # put application's code here
+def add_message():
     new_message = request.json['message']
     messages.append(new_message)
     return {'message': new_message}
